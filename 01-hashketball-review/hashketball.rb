@@ -121,16 +121,35 @@ def game_hash
   }
 end
 
+def players
+  players = game_hash.keys.map do |loc|
+    # new_arr_of_players = []
+    game_hash[loc][:players]
+  end
+  # binding.pry
+  players.flatten
+end
+
+def find_the_player(name)
+  players.find do |player_hash|
+    player_hash[:player_name] == name
+  end
+end
+
 
 def num_points_scored(player_name)
   # get access to all the players
-  game_hash.keys.map do |loc|
-    new_arr_of_players = []
-    binding.pry
-
-
-  end
+  # binding.pry
   #lookup the player
+  found_player = find_the_player(player_name)
 
   # get those stats!
+
+  found_player[:points]
+end
+
+def shoe_size(name)
+  found_player = find_the_player(name)
+  # binding.pry
+  found_player[:shoe]
 end
