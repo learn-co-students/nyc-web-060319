@@ -34,6 +34,7 @@ class Band
     Concert.new(date, self, venue)
   end
 
+  # solutions to methods not covered in lecture
   def update_attendance(concert, number)
     if concert.band == self
       concert.attendance = number
