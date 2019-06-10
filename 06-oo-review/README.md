@@ -22,14 +22,14 @@ We've provided you with a console that you can use to test your code. To enter a
 
 Build the following methods on the **Band** class:
 
-<!-- + Band.all
-  + returns an array of all bands -->
-<!-- + Band#concerts
-  + returns a list of concerts at a specific band -->
-<!-- + Band#venues
-  + should return a list of unique venues for a specific band -->
-<!-- + Band#add_concert(date, venue)
-  + given a date and a venue, creates a new concert and associates it with that band and venue -->
++ Band.all
+  + returns an array of all bands
++ Band#concerts
+  + returns a list of concerts at a specific band
++ Band#venues
+  + should return a list of unique venues for a specific band
++ Band#add_concert(date, venue)
+  + given a date and a venue, creates a new concert and associates it with that band and venue
 + Band#update_attendance(concert, number)
   + changes the attendance for a concert given a number (only if the concert belongs to the band)
 + Band#average_sale_rate
@@ -41,28 +41,28 @@ Build the following methods on the **Band** class:
 
 Build out the following methods on the **Venue** class:
 
-<!-- + Venue.all
-  + returns an array of all venues -->
-<!-- + Venue.find_by_location(location)
-  + given a string of a location, returns all venues that match that location -->
-<!-- + Venue.find_by_name(name)
-  + given a string of a venue name, returns the venue with that name -->
-<!-- + Venue#concert_dates
-  + returns a list of unique concert dates for a specific venue -->
-<!-- + Venue#bands
-  + returns a list of unique bands for a specific venue -->
-<!-- + Venue#average_attendance
-  + returns the average attendance for that specific venue -->
++ Venue.all
+  + returns an array of all venues
++ Venue.find_by_location(location)
+  + given a string of a location, returns all venues that match that location
++ Venue.find_by_name(name)
+  + given a string of a venue name, returns the venue with that name
++ Venue#concert_dates
+  + returns a list of unique concert dates for a specific venue
++ Venue#bands
+  + returns a list of unique bands for a specific venue
++ Venue#average_attendance
+  + returns the average attendance for that specific venue
 
 Build out the following methods on the **Concert** class:
 
-<!-- + Concert.all
-  + returns an array of all concerts -->
-<!-- + Concert#band
-  + returns the band for that given concert -->
-<!-- + Concert#venue
-  + returns the venue for that given concert -->
-<!-- + Attendance should be defaulted to 0 -->
-<!-- + Attendance should not be greater than the venue's capacity or less than 0 -->
-<!-- + Concert.highest_attendance
-  + returns the concert with the highest attendance -->
++ Concert.all
+  + returns an array of all concerts
++ Concert#band
+  + returns the band for that given concert
++ Concert#venue
+  + returns the venue for that given concert
++ Attendance should be defaulted to 0
++ Attendance should not be greater than the venue's capacity or less than 0
++ Concert.highest_attendance
+  + returns the concert with the highest attendance

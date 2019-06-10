@@ -4,7 +4,7 @@ class Concert
 
   @@all = []
 
-  def initialize(date, band, venue, attendance=0)
+  def initialize(date, band, venue, attendance = 0)
     @date = date
     @band = band
     @venue = venue
