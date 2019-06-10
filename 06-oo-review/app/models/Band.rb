@@ -18,7 +18,6 @@ class Band
     Concert.all.select do |concert|
       concert.band == self
     end
-
   end
 
   def venues
@@ -30,5 +29,4 @@ class Band
   def add_concert(date, venue)
     Concert.new(date, self, venue)
   end
-
 end

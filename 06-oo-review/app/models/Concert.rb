@@ -30,10 +30,12 @@ class Concert
   end
 
   def self.highest_attendance
+    # can also use max_by instead of sort_by to return just the max instance
     sorted_concerts = self.all.sort_by do |concert|
       concert.attendance
     end
 
     sorted_concerts[sorted_concerts.length - 1]
+    # can also do sorted_concerts.last or sorted_concerts[-1]
   end
 end
