@@ -46,16 +46,16 @@ Non-Relational Databases
 MongoDB, NoSQL
 
 ## Things we can do to data:
-Insert new information
-Delete information
-Manipulate/change information
-Read information
+- Insert new information
+- Delete information
+- Manipulate/change information
+- Read information
 
-CRUD
-C reate
-R ead
-U pdate
-D elete/destroy
+**CRUD**
+- C reate
+- R ead
+- U pdate
+- D elete/destroy
 
 ## Challenges
 
