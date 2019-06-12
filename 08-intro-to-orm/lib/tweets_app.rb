@@ -10,8 +10,10 @@ class TweetsApp
     message = gets.chomp
 
     tweet = Tweet.new({'user_id' => user_id, 'message' => message})
+    # INSERT INTO
     tweet.save
 
+    # SELECT * FROM tweets
     tweets = Tweet.all
     render(tweets)
   end

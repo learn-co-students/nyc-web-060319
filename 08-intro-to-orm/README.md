@@ -1,5 +1,8 @@
 ## Object Relational Mapper (ORM)
 + Definition:
+Mapping back and forth between OO (Ruby) world & Relational db (SQL) world
+
+Call ruby methods, that execute sql queries
 
 
 # CRUD REVIEW
