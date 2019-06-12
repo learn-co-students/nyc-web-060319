@@ -18,13 +18,13 @@ Intro to SQL
 4. Click the tab that says 'Execute SQL'. Type SQL queries in the box above. Press the play button. See the results of that query in the box below
 
 ## What is SQL?
-Structured Query Language
-Allows us to communicate/interact with our database
+- Structured Query Language
+- Allows us to communicate/interact with our database
 
 ## Databases
-Spreadsheet
-Rows => instances that we create
-Columns => attributes
+- Spreadsheet
+- Rows => instances that we create
+- Columns => attributes
 
 Why databases?
 - Persist information
