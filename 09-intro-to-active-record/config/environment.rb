@@ -9,11 +9,3 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 require_all 'app'
-
-module ActiveRecord
-
-  class Base
-
-  end
-
-end

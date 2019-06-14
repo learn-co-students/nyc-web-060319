@@ -7,20 +7,3 @@ gem 'require_all'
 gem 'sqlite3'
 gem 'pry'
 gem 'faker'
-
-
-class ANYNAME
-
-
-  @@all = []
-
-  def initialize(argument)
-    @argument = argument
-    @@all << self
-  end
-
-  def self.all
-
-  end
-
-end
