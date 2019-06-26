@@ -1,0 +1,11 @@
+<h1>Rappers</h1>
+
+<ul>
+
+  <% @rappers.each do |rapper| %>
+  <li>
+    <%= rapper.name %>: <%= rapper.age%>
+  </li>
+
+  <% end %>
+</ul>
