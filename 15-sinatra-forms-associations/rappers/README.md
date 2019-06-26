@@ -1,30 +1,29 @@
-## Sinatra Forms
+## Sinatra Forms and Associations
 
-Think, Pair, Share
+Parking Lot:
 
-## What is a Form
+- Process/Sequence of events
+  - Building out an application
+- Reading the errors
+- Clarifying convention vs convention
+  - What's mandatory vs opinionated
 
-- User has to initiate some action
-- initiate with information
-- in HTML is essentially input tags wrapped inside of a form tag
+# How do we do all the things we've been doing w/ a relationship (i.e. one to many)
 
-## CRUD for Controllers
+# Separation of Concerns
 
-Create -- POST
+- Specifically as it relates to controllers and views
 
-- new
-- create
-  Read -- GET
+# Complete all 7 Controller actions
+
 - index
 - show
-  Update -- PATCH/PUT
-- edit
-- update
-  Delete -- DELETE
-- delete/destroy
+- new -- render a "new" form
+- create -- receives params with information from the browser and "creates" our instance
+- edit -- render an "edit" form
+- update -- receives params with information from the browser and "updates" our instance
+- delete
 
-## Form
+# Goal for today:
 
-- A collection of inputs wrapped by an html form-tag
-
-## Params
+- be able to build out our own model/controller/view for a resource/model

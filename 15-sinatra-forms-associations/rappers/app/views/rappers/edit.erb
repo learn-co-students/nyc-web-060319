@@ -1,0 +1,8 @@
+"Changing Rappasssss changing lives"
+
+<form action="/rappers/<%=@rapper.id%>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="rapper[name]" value="<%=@rapper.name%>">
+  <input type="number" name="rapper[age]" value="<%=@rapper.age%>">
+  <input type="submit" value="Change a Life">
+</form>
