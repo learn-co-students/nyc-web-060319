@@ -1,3 +1,28 @@
+1. `git pull` the recent changes to today's lecture code 
+2. Complete the `delete` request for `Rapper`
+	- hint: it's in your "Sinatra Restful Routes" lab
+3. Create seed your database with a few `Song` instances
+4. Build a `SongsController`
+	- `SongsController` should have an `index` action
+	- `SongsController` should have a `show` action
+	- `SongsController` should have a `delete` action
+	
+_BONUS:_
+- Build out the `new`, `create`, `edit`, & `update` actions for `Song`
+	- hint, building forms for a `belongs_to` model is also in your labs
+	
+**At 3pm we will review this project and build the `new` & `create` actions for the SongsController together**
+
+
+
+
+
+
+
+
+
+
+
 ## Sinatra Forms and Associations
 
 Parking Lot:
