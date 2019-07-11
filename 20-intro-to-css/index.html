@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+      We've pulled this font from google fonts so we can use it in our stylesheet
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/card.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css"
+    />
+    <!--
+      We pull in these links to get the specific styling for the semantic ui cards
+    -->
+    <meta charset="utf-8" />
+    <title>Giraffestagram TM</title>
+    <!-- The title determines what is displayed on the tab -->
+    <style>
+      /* If we added styling here it would be part of an 'internal stylesheet' */
+    </style>
+  </head>
+  <body>
+    <nav>Giraffestagram | <a href="">Login</a> | <a href="">Search</a></nav>
+    <!--
+      some elements like nav, header, and footer are more or less just named divs
+    -->
+    <!-- This nav has been styled so it remains fixed at the top of the page -->
+
+    <div style="width: 50%;">
+      <!-- This div has what's considered 'inline styling' -->
+      <!--
+        Inline styling has more specificity than a stylesheet and will override what you see there
+      -->
+      <h1 class="welcome-message" style="color:red">
+        Welcome To Giraffestagram
+      </h1>
+    </div>
+
+    <p style="font-family: cursive">Hello you've stumbled upon my site.</p>
+    <p id="welcome" class="welcome-class">
+      Welcome fellow giraffe to a world of wonder!
+    </p>
+    <!-- In a page there can be several elements with the same class -->
+    <!-- There should only be one element with an ID -->
+    <p>Giraffes only</p>
+
+    <div id="giraffes-container">
+      <!--
+        The giraffes element is a container that assembles all the other elements into a grid
+      -->
+
+      <!--
+        This card is a template we grabbed from the semantic website and added here
+      -->
+      <div class="ui card">
+        <div class="content">
+          <div class="right floated meta">14h</div>
+          <img
+            class="ui avatar image"
+            src="evans3.jpg"
+            style="transform: rotate(90deg)"
+          />
+          Tashawn
+        </div>
+        <div class="image">
+          <img
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_giraffe_1_0.jpg"
+          />
+        </div>
+        <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i> 1 likes
+          </span>
+          <i class="comment icon"></i> 20 comments
+        </div>
+        <div class="extra content">
+          <div class="ui large transparent left icon input">
+            <i class="heart outline icon"></i>
+            <input type="text" placeholder="Add Comment..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Template card 2 -->
+      <div class="ui card">
+        <div class="content">
+          <div class="right floated meta">14h</div>
+          <img
+            class="ui avatar image"
+            src="evans3.jpg"
+            style="transform: rotate(90deg)"
+          />
+          Vera
+        </div>
+        <div class="image"><img src="evans2.jpg" /></div>
+        <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i> 17 likes
+          </span>
+          <i class="comment icon"></i> 3 comments
+        </div>
+        <div class="extra content">
+          <div class="ui large transparent left icon input">
+            <i class="heart outline icon"></i>
+            <input type="text" placeholder="Add Comment..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Template card 3 -->
+      <div class="ui card">
+        <div class="content">
+          <div class="right floated meta">14h</div>
+          <img
+            class="ui avatar image"
+            src="evans3.jpg"
+            style="transform: rotate(270deg)"
+          />
+          Chett
+        </div>
+        <div class="image"><img src="evans1.jpg" /></div>
+        <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i> 17 likes
+          </span>
+          <i class="comment icon"></i> 3 comments
+        </div>
+        <div class="extra content">
+          <div class="ui large transparent left icon input">
+            <i class="heart outline icon"></i>
+            <input type="text" placeholder="Add Comment..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Template card 4 -->
+      <div class="ui card">
+        <div class="content">
+          <div class="right floated meta">14h</div>
+          <img
+            class="ui avatar image"
+            src="evans3.jpg"
+            style="transform: rotate(90deg)"
+          />
+          Evans
+        </div>
+        <div class="image"><img src="evans3.jpg" /></div>
+        <div class="content">
+          <span class="right floated">
+            <i class="heart outline like icon"></i> 17 likes
+          </span>
+          <i class="comment icon"></i> 3 comments
+        </div>
+        <div class="extra content">
+          <div class="ui large transparent left icon input">
+            <i class="heart outline icon"></i>
+            <input type="text" placeholder="Add Comment..." />
+          </div>
+        </div>
+      </div>
+      <!-- end of cards -->
+    </div>
+    <!-- end of giraffe-container -->
+    <!--
+      for large statements like this it's a good habit to add a comment so it's easier to tell where something ends
+    -->
+  </body>
+</html>

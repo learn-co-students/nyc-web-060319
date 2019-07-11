@@ -1,0 +1,56 @@
+/* body * {
+border: solid black 1px;
+} */
+/* The above code can allow you to see all your elements with a thin border which can help with placement */
+
+.welcome-message {
+  margin-top: 20px;
+  border: 5px solid orange;
+}
+p {
+  font-family: "Barriecito", cursive;
+}
+/* We've set all p tags to use a font-family imported from google fonts */
+
+.welcome-class {
+  color: green;
+  font-family: monospace;
+}
+/* Because a class is more specific than the p tag, the welcome class's font will override the tag's */
+
+#welcome {
+  font-family: fantasy;
+}
+/* An ID is the most specific selector in a stylesheet and it'll override classes and tag styling */
+
+nav {
+  background: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding-top: 4px;
+  z-index: 10;
+  /* The z-index determines whether elements are in front of or behind each other */
+  /* The actual numbers are arbitrary, all 10 means is it'll be in front of everything that's less than 10 */
+}
+/* This navbar has a position of fixed which means it'll stay where it is even if we scroll */
+body {
+  padding-top: 1em;
+}
+/* In order to keep things from hiding behind the navbar, we add padding to the body so they stay below it */
+
+#giraffes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: space-around;
+}
+/* This container creates a grid of three different columns */
+/* All of the containers children will automatically fill up the grid starting from the left */
+
+#giraffes-container .ui.card:first-child {
+  margin-top: 1em;
+}
+/* Added this rule to resolves a spacing issue with semantic cards and grid */
+/* In order to properly apply this rule, we had to get very specific by calling an id's child and that specific class's first child */
