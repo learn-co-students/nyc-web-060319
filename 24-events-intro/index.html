@@ -11,7 +11,7 @@
     <div id="comments">
       <h3>Comments</h3>
       <!-- HTML form will try to post -->
-      <form id='comment-form'>
+      <form id='comment-form' action="/pizza-hut">
         <div class="field">
           <input id='new-comment' type='text' placeholder='New Comment' />
           <!-- giving our button the type of submit will cause it to tell the form to submit -->
@@ -21,7 +21,7 @@
       <div id="comments-container">
       </div>
 
-      <div id="helicopter-parent">
+      <div id="helicopter-parent" style="background-color: yellow">
         <div>
           <br>
           <div>
@@ -30,7 +30,7 @@
               <p>HI</p>
               <div>
                 <button class="btn" data-name="alert">Alert ME</button>
-                <button class="btn" data-name="log">Console Log something</button>
+                <button class="btn" data-name="log" data-custom="cookie">Console Log something</button>
                 <button class="btn" data-name="error">Console Error</button>
               </div>
             </div>
