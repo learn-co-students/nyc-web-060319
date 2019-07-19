@@ -1,0 +1,2 @@
+class NachosController < ApplicationController
+end
