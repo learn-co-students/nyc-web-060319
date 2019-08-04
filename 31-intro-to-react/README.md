@@ -12,7 +12,10 @@
 
     Components: functions that return a React element
 
-    Props: arguments that are passed into components that allows each component to be dynamic
+        Components have a lifecycle that allows us to run code at different stages of a component's "life"
+
+        Components can receive "props" which are arguments that are passed into components that allows each component to be dynamic
+
 - Imperative vs. Declaritive
 
     Imperative: explicitly write each step
