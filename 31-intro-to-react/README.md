@@ -9,7 +9,9 @@
 
 - Virtual DOM
 - Reusability
+
     Components: functions that return a React element
+
     Props: arguments that are passed into components that allows each component to be dynamic
 - Imperative vs. Declaritive
 
