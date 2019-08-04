@@ -10,6 +10,7 @@
 - Virtual DOM
 - Reusability
     Components: functions that return a React element
+    Props: arguments that are passed into components that allows each component to be dynamic
 - Imperative vs. Declaritive
     JSX: Syntactical sugar that allows us to write html inside of JS, but is still just JS
 
