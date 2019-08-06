@@ -3,11 +3,10 @@
 ## Questions
 
 - Arrow Functions/class methods
-- Using props 
-- Writing logic in render() 
-- Writing arrow functions in event handlers 
-- Commenting inside JSX 
-
+- Using props
+- Writing logic in render()
+- Writing arrow functions in event handlers
+- Commenting inside JSX
 
 ## Tools of React (what we learned yesterday)
 
