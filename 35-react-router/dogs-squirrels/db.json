@@ -1,0 +1,36 @@
+{
+ "animals": {
+  "dogs": [
+   {
+    "id": 1,
+    "name": "Dug",
+    "famous-for": "Disney's UP",
+    "happyImg": "https://vignette.wikia.nocookie.net/pixar/images/3/35/Dug-up.jpg/revision/latest?cb=20090602035123",
+    "sadImg": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/dug-up-93.jpg"
+   },
+   {
+    "id": 2,
+    "name": "Bolt",
+    "famous-for": "Disney's Bolt",
+    "happyImg": "https://i.pinimg.com/originals/1e/da/50/1eda502fa4d3be2c48f64c7e04b35ea9.jpg",
+    "sadImg": "http://images6.fanpop.com/image/photos/34300000/Bolt-disneys-bolt-34335639-720-720.jpg"
+   }
+  ],
+  "squirrels": [
+   {
+    "id": 1,
+    "name": "Scrat",
+    "famous-for": "Disney's Ice Age",
+    "happyImg": "https://i.pinimg.com/236x/99/df/7c/99df7c422027d2e7836c06ca30487c84--free-android-android-apps.jpg",
+    "sadImg": "http://images6.fanpop.com/image/photos/41300000/Scrat-ice-age-3-dawn-of-the-dinosaurs-41363264-1200-1157.jpg"
+   },
+   {
+    "id": 2,
+    "name": "Slappy",
+    "famous-for": "Warner Brother's Animaniacs",
+    "happyImg": "https://cdn.retrojunk.com/file/rj-media-image/5e2_eba4d07366.jpg",
+    "sadImg": "https://vignette.wikia.nocookie.net/animaniacs/images/e/eb/Slappysquirrel.jpg/revision/latest?cb=20130309140344"
+   }
+  ]
+ }
+}
