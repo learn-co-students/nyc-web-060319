@@ -1,0 +1,22 @@
+import React from 'react';
+import Animal from '../Components/Animal';
+import Form from '../Components/Form';
+
+class SquirrelsContainer extends React.Component {
+ render() {
+  console.log('squirrel props', this.props);
+  let squirrelsArray = this.props.squirrels.map(squirrel => (
+   <Animal animal={squirrel} route={`/squirrels/${squirrel.id}`} />
+  ));
+
+  return (
+   <div className="container">
+    <h1>Squirrels Container</h1>
+    <Form />
+    {squirrelsArray}
+   </div>
+  );
+ }
+}
+
+export default SquirrelsContainer;
