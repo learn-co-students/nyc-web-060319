@@ -6,7 +6,11 @@ class SquirrelsContainer extends React.Component {
  render() {
   console.log('squirrel props', this.props);
   let squirrelsArray = this.props.squirrels.map(squirrel => (
-   <Animal animal={squirrel} route={`/squirrels/${squirrel.id}`} />
+   <Animal
+    key={squirrel.id}
+    animal={squirrel}
+    route={`/squirrels/${squirrel.id}`}
+   />
   ));
 
   return (

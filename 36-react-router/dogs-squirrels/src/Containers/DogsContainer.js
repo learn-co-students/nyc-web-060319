@@ -5,7 +5,9 @@ import Form from '../Components/Form';
 
 class DogsContainer extends React.Component {
  render() {
-  let dogsArray = this.props.dogs.map(dog => <Animal animal={dog} />);
+  let dogsArray = this.props.dogs.map(dog => (
+   <Animal key={dog.id} animal={dog} route={`/dogs/${dog.id}`} />
+  ));
   return (
    <div className="container">
     {this.props.dogs.length > 0 ? (
