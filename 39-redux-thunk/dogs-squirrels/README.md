@@ -27,3 +27,7 @@
   - Including your async action creators
 - Export your action creators
 - Use action creators where necessary
+
+## Activity
+
+- We should be able to click on the `like` button on the Animal Component and increment the number by 1

@@ -24,7 +24,7 @@ class Animal extends React.Component {
     <Link to={this.props.route}>
      <button>Go to show page</button>
     </Link>
-    <button onClick={this.likeClickHandler}>Like</button>
+    <button onClick={this.props.clickHandler}>Like</button>
    </div>
   );
  }

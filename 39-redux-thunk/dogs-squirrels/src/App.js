@@ -1,23 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './App.css';
 import Header from './Components/Header';
 import DogsContainer from './Containers/DogsContainer';
 import SquirrelsContainer from './Containers/SquirrelsContainer';
 import FoOhFo from './Components/FoOFo';
+import { fetchAnimals } from './actions';
 
 class App extends React.Component {
- state = {
-  dogs: [],
-  squirrels: []
- };
-
  componentDidMount() {
-  fetch('http://localhost:4000/animals')
-   .then(resp => resp.json())
-   .then(apiData =>
-    this.setState({ dogs: apiData.dogs, squirrels: apiData.squirrels })
-   );
+  console.log('test');
+  this.props.fetchAnimals();
  }
 
  addDog = (e, dogObj) => {
@@ -39,7 +33,7 @@ class App extends React.Component {
      path="/dogs"
      render={() => (
       <DogsContainer
-       dogs={this.state.dogs}
+       dogs={this.props.dogs}
        containerSubmitHandler={this.addDog}
       />
      )}
@@ -49,7 +43,7 @@ class App extends React.Component {
      path="/squirrels"
      render={() => (
       <SquirrelsContainer
-       squirrels={this.state.squirrels}
+       squirrels={this.props.squirrels}
        containerSubmitHandler={this.addSquirrel}
       />
      )}
@@ -59,5 +53,21 @@ class App extends React.Component {
   );
  }
 }
+function msp(state) {
+ console.log('REDUX STATE', state.animals);
+ return {
+  dogs: state.animals.dogs,
+  squirrels: state.animals.squirrels
+ };
+}
 
-export default App;
+function mdp(dispatch) {
+ return {
+  fetchAnimals: fetchAnimals(dispatch)
+ };
+}
+
+export default connect(
+ msp,
+ mdp
+)(App);

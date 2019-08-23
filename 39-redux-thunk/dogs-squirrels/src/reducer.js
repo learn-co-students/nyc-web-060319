@@ -25,7 +25,7 @@ function fetchReducer(state = defaultState, action) {
     squirrels: action.payload.squirrels
    };
   default:
-   return state;
+   return { dogs: state.dogs, squirrels: state.squirrels };
  }
 }
 
